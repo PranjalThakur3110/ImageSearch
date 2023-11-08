@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 const API_KEY = '2c9733a1dfd970b673bb7581b847a49b';
-const RECENT_PHOTOS_URL = `https://www.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=${API_KEY}&format=json&nojsoncallback=1`;
-const SEARCH_PHOTOS_BASE_URL = `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${API_KEY}&format=json&nojsoncallback=1&text=`;
+const RECENT_PHOTOS_URL = `https://www.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=${API_KEY}&format=json&nojsoncallback=1&safe_search=1`;
+const SEARCH_PHOTOS_BASE_URL = `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${API_KEY}&format=json&nojsoncallback=1&safe_search=1&text=`;
 
 const ImageSearch = () => {
   const [searchQuery, setSearchQuery] = useState('');
